@@ -1,0 +1,25 @@
+==================================================
+SOFTWARE QUALITY ENGINEERING - ASSIGNMENT 3 NOTES
+Task 2: ECP and BVA Testing Documentation
+==================================================
+
+1. Module: calculator.py (Arithmetic Functions)
+- Equivalence Class Partitioning (ECP):
+  * Valid Classes: Positive numbers, Negative numbers, Zero.
+  * Invalid Classes: Strings, None values (handled via tests).
+- Boundary Value Analysis (BVA):
+  * Testing around zero (0, -1, 1).
+  * Testing large numbers.
+
+2. Module: app.py (Flask Web Routes)
+- Equivalence Class Partitioning (ECP):
+  * Valid inputs for addition API parameters 'a' and 'b' (integers/floats).
+  * Default values when parameters are missing.
+
+3. Module: string_utils.py (String Length Checker)
+- Equivalence Class Partitioning (ECP):
+  * Empty string (Length 0) -> Expected: "Empty"
+  * Short string (Length 1 to 5) -> Expected: "Short"
+  * Long string (Length > 5) -> Expected: "Long"
+- Boundary Value Analysis (BVA):
+  * Boundary at length 5: testing string with 5 characters and 6 characters.
